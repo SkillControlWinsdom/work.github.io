@@ -152,6 +152,10 @@ nav{
     text-transform: lowercase;
 }
 
+.main-message p span{
+    text-transform: uppercase;
+}
+
 .btn{
     background-color: #eb648c;
     border-radius: 2.5rem;
@@ -179,7 +183,7 @@ nav{
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10rem;
-    color: rgba(0, 0, 0, .7);
+    color: rgba(0, 0, 0,.7);
 }
 
 .title-heading h3{
@@ -198,9 +202,10 @@ nav{
 }
 
 .activities-grid{
-    display: grid;
-    grid-template-columns: repeat( auto-fit , minmax(25rem, 1fr));
-    grid-gap: 2.5rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+   grid-gap: 4.5rem;
+   grid-row: 1;
 }
 
 .activities-grid-item{
@@ -211,8 +216,10 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    cursor: pointer;
+    cursor: ;
     z-index: 1;
+    bottom: 5rem;
+    
     }
 
 .activities-grid-item::before{
